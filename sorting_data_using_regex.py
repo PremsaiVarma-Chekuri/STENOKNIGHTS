@@ -6,7 +6,8 @@ print(name)
 age = text.split('Age/Sex').pop(1).split('Bill No').pop(0).strip(" ").strip(":")
 print(age)"""
 x = text
-
+print(text)
+# text = "xyz hospital Pat.No : 676637 Dept. : Pat.Cat : Pat.Name : sanjeev Age/Sex :18/Male Bill No :45 Ref.By : ortho Done by : robin Bill Date : 5/11/2022 Remarks : --- Auth.By: MS S.No invest igat ion / Service Name Amount 1 ortho therapy session 1,500 Signature Total : 1,500"
 import regex as re
 name = re.search(r'Name :(.*?)Age',text).group(1)
 age = re.search(r'Age/Sex :(.*?)Bill',text).group(1)
